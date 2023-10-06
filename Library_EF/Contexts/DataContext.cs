@@ -12,7 +12,7 @@ namespace Library_EF.Contexts
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-IBRAHIM\\;Database=Library2;SQLEXPRESS;Integrated Security=True;");  
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-IBRAHIM\\SQLEXPRESS;Database=Library;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");  
             base.OnConfiguring(optionsBuilder);
         }
         public DbSet<Authors> Authors { get; set; }
